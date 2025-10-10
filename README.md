@@ -4,9 +4,9 @@
   <img src="J8.ico" width="100">
 </p>
 
-# 💩 HonorPCManagerisJ8
+# ECsharp
 
-## 荣耀电脑管家就是一坨屎
+## 荣耀电脑管家很烂
 
 ---
 
