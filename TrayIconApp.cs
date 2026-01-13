@@ -58,11 +58,13 @@ static class TrayIconApp
 
         private void OnExit(object sender, EventArgs e)
         {
-            // 先调用 Main 中传来的退出逻辑
             onExitAction?.Invoke();
-            // 再关闭托盘线程
-            ExitThread();
+            notifyIcon.Visible = false;
+            notifyIcon.Dispose();
+            trayIcon?.Dispose();
+            Environment.Exit(0);
         }
+
 
         protected override void ExitThreadCore()
         {
